@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "e-Ukraine-Regular";
+    src:
+        url("../fonts/e-Ukraine-Regular.otf") format("opentype"),
+
+
+}
+
+@font-face {
+    font-family: "e-UkraineHead-Regular";
+    src:
+        url("../fonts/e-UkraineHead-Regular.otf")
+}
+
+
+
+.img-wrap>img {
+
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+body {
+    background-color: #3AEBFA;
+    font-family: e-Ukraine-Regular, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "e-UkraineHead-Regular", serif;
+}
+* {
+    --bs-link-color: #31F783 !important;
+    --bs-btn-bg: #31F7C6  !important;
+    --bs-link-hover-color: #FABE35 !important;
+}
+.btn-primary {
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #31F783;
+
+}
+
+
+.img-wrap {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+
+
+
+.dropdownmenu ul,
+.dropdownmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul {
+    background: gray;
+    list-style: none;
+
+}
+
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.dropdownmenu a {
+    background: #31F7C6;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.dropdownmenu li:hover a {
+    background: var(--bs-link-color);
+}
+
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 40px;
+    visibility: visible;
+}
+
+#submenu li {
+    float: none;
+    width: 100%;
+}
+
+#submenu a:hover {
+    background: #1BA1FA;
+}
+
+#submenu a {
+    background-color: var(--bs-link-color);
+    text-wrap: nowrap;
+}
+
+.news-list {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+}

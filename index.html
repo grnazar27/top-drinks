@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="dropdownmenu">
+            <ul>
+                <li><a href="">Головна</a></li>
+                <li><a href="#">Топи</a>
+                    <ul id="submenu">
+                        <li>
+                            <a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">топ їжі </a>
+                        </li>
+                        <li>
+                            <a href="http://www.jochaho.com/wordpress/new-features-in-html5/">топ фільмів</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">топ
+                                ігор</a>
+                        </li>
+
+                </li>
+            </ul>
+            </li>
+            <li><a href="https://www.coca-cola.com/ua/uk">Кока-кола</a></li>
+            <li><a href="https://www.pepsi.com/">Пепсі</a></li>
+            <li>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    увійти
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">увійдіть</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="увійти" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">увійти</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="зареєструватись" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">зареєструватись</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">електронна адреса</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">ви не робот</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Увійти</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">електронна адреса</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">це новий акаунт</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">створити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h1 align="center">Топ 4 популярних напоїв</h1>
+    <main class="top_drincks text-center container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-12 news-list">Список напоїв:
+
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#Cola">кола</a>
+                    <a class="list-group-item list-group-item-action" href="#Pepsi">пепсі</a>
+                    <a class="list-group-item list-group-item-action" href="#Fanta">фанта</a>
+                    <a class="list-group-item list-group-item-action" href="#Sprite">спрайт</a>
+                  </div>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example col-lg-10 col-sm-12" tabindex="0">
+                <div id="Cola">
+                    <div class="img-wrap">
+                        <img src="https://img2.zakaz.ua/ca8a723509694330a86fdd679a22ef26/1685349038-s1350x1350.jpg"
+                            align="left">
+                    </div>
+                    <p>Ко́ка-ко́ла (англ. Coca-Cola) — газований безалкогольний прохолоджувальний напій і однойменна
+                        американська компанія (The Coca-Cola Company), яка його виробляє. Кока-колу винайшов
+                        американський
+                        фармацевт Джон Пембертон 8 травня 1886 в Атланті як новий лікувальний напій.
+                        Напій продається більш ніж у 200 країнах світу. Компанія «Кока-кола» також володіє торговими
+                        марками та
+                        виробляє цілий ряд інших напоїв: «Кока-кола лайт», «Спрайт», «Фанта», «Бонаква» та інші. </p>
+                </div>
+                <div id="Pepsi">
+                    <div class="img-wrap">
+                        <img src="https://cooker.net.ua/upload/iblock/9f7/pepsi-1-5-l.jpg" align="right">
+                    </div>
+                    <p>Пе́псі-ко́ла (англ. Pepsi Cola) або Пе́псі — безалкогольний напій, основний конкурент
+                        «Кока-коли». Права
+                        на торгову марку «Пепсі-кола» належать американській компанії PepsiCo.Через п'ять років після
+                        винаходу
+                        Бредхем придумав для неї назву – «Пепсі-Кола», а 16 червня 1903 року зареєстрував його як
+                        торговельну
+                        марку. 1934 – у Харкові відкрився перший з'їзд</p>
+                </div>
+                <div id="Fanta">
+                    <div class="img-wrap">
+                        <img src="https://okwine.ua/files/product/61b345336ebb0c2d53db5bdf/30a3fe38-4c76-4416-83a5-b40b708e36f5.full_fanta-fanta-apelsin-zh-b-0-33l.jpg"
+                            align="left">
+                    </div>
+                    <P>Фа́нта (нім. Fanta) — марка безалкогольних газованих прохолодних напоїв, які виробляє компанія
+                        The
+                        Coca-Cola Company. Нині у всьому світі робиться близько 70 різних видів напою, але майже завжди
+                        це
+                        регіональні марки.Напій з'явився в 1940 році в Німеччині в роки Другої світової війни. Через накладений антигітлерівською коаліцією ембарго була припинена поставка в Німеччину сиропу, необхідного для виробництва Кока-Коли. Тоді Макс Кайт, який відповідав за роботу підрозділу Кока-Коли в Німеччині в роки Другої Світової війни, ухвалив рішення створити новий продукт на основі інгредієнтів, які були доступні в Німеччині в цей час. Основними компонентами нового напою стала яблучна макуха (відходи виробництва сидру) і молочна сироватка (побічний продукт сироварного виробництва).</P>
+                </div>
+                <div id="Sprite">
+                    <div class="img-wrap">
+                        <img src="https://img.fozzyshop.com.ua/229228-large_default/napitok-sprite-zh-b.jpg"
+                            align="right">
+                    </div>
+                    <p>Sprite — газований безалкогольний напій, що випускається компанією «The Coca-Cola Company».
+                        Sprite
+                        Mint-смак який виходить з 2002 року у Болгарії продається в 190 країнах світу.Ідея назви напою народилася в 40-і роки XX століття: у той час в рекламних кампаніях «Coca-Cola» був особливо популярний Малюк Спрайт — ельф з срібним волоссям і широкою посмішкою, який носив замість капелюха пробку від напою. Цей персонаж настільки запав у душу споживачам, що «Кока-кола» незабаром використала його ім'я для назви нового газованого напою з лимонним смаком і смаком лайма  —«Sprite»</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2023 grnazar27@gmail.com, Inc</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Головна</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">статті</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">соц мережі</a></li>
+                <li class="nav-item"><a href="https://github.com/grnazar27" class="nav-link px-2 text-muted">автор</a></li>
+            </ul>
+        </footer>
+    </div>
+    </footer>
+</body>
+
+</html>
